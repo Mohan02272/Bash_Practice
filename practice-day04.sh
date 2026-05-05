@@ -8,4 +8,11 @@ for i in {1..5}
 
 do
     echo "Number: $i"
+
+    echo "Date:"
+    date
+
+    echo "Disk usage:"
+    df -h | head -n 2
+
 done
