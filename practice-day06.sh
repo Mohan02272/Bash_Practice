@@ -1,13 +1,12 @@
 #!/bin/bash
 
-echo "===== SERVICE STATUS CHECKER ====="
-
-service="ssh"
+echo "Enter service name:"
+read service
 
 systemctl is-active --quiet $service
 
 if [ $? -eq 0 ]; then
-    echo "$service service is RUNNING"
+    echo "$service is RUNNING"
 else
-    echo "$service service is NOT RUNNING"
+    echo "$service is NOT RUNNING"
 fi
