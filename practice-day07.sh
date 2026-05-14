@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "===== USER CREATION SCRIPT ====="
+echo "==== USER CREATION SCRIPT ===="
 
 echo "Enter new username:"
 read username
